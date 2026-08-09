@@ -11,13 +11,14 @@ public abstract class Movimientos {
         private double valor;
 
 
-    public Movimientos(String idMovimiento, String nombre, Date fechaRealizaicon, String descripcion, String idAlmacen, double valor) {
+    public Movimientos(String idMovimiento, String nombre, Date fechaRealizaicon, String descripcion, double valor, String idAlmacen ) {
         this.idMovimiento = idMovimiento;
         this.nombre = nombre;
         this.FechaRealizaicon = fechaRealizaicon;
         this.Descripcion = descripcion;
+        this.valor = 0.0;
         this.IdAlmacen = idAlmacen;
-        this.valor = valor;
+
     }
 
     public String getIdMovimiento() {
