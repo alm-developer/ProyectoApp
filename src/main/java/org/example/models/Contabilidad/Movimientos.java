@@ -1,17 +1,18 @@
 package org.example.models.Contabilidad;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public abstract class Movimientos {
         private String idMovimiento;
         private String nombre;
-        private Date FechaRealizaicon;
+        private LocalDate FechaRealizaicon;
         private String Descripcion;
         private String IdAlmacen;
         private double valor;
 
 
-    public Movimientos(String idMovimiento, String nombre, Date fechaRealizaicon, String descripcion, double valor, String idAlmacen ) {
+    public Movimientos(String idMovimiento, String nombre, LocalDate fechaRealizaicon, String descripcion, double valor, String idAlmacen ) {
         this.idMovimiento = idMovimiento;
         this.nombre = nombre;
         this.FechaRealizaicon = fechaRealizaicon;
@@ -25,7 +26,7 @@ public abstract class Movimientos {
         return idMovimiento;
     }
 
-    public Date getFechaRealizaicon() {
+    public LocalDate getFechaRealizaicon() {
         return FechaRealizaicon;
     }
 

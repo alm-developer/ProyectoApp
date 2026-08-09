@@ -9,11 +9,5 @@ public class Caja {
         this.saldoInicial = saldoInicial;
     }
 
-    public void ingresar(){
 
-    }
-
-    public void retirar(){
-
-    }
 }

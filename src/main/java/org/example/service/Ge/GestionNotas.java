@@ -8,4 +8,18 @@ public class GestionNotas {
 
     private static ArrayList<Notas> listaNotas = new ArrayList<Notas>();
 
+
+    public void crearNota(){
+
+    }
+
+    public void eliminarNota(){
+
+    }
+
+    public void editarNota(){
+
+    }
+
+
 }

@@ -8,7 +8,6 @@ import org.example.service.Ge.GestionAlmacen;
 public class Main {
 
     static void main() {
-        GestionAlmacen.guardarAlmacen();
         MenuUI.menu();
     }
 }

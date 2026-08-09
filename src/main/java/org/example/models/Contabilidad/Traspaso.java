@@ -1,12 +1,13 @@
 package org.example.models.Contabilidad;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Traspaso extends Movimientos {
     private String idAlmacenDonador;
     private String idAlmacenRecibidor;
 
-    public Traspaso(String idMovimiento, String nombre, Date fechaRealizaicon, String descripcion, double valor, String idAlmacen) {
+    public Traspaso(String idMovimiento, String nombre, LocalDate fechaRealizaicon, String descripcion, double valor, String idAlmacen) {
         super(idMovimiento, nombre, fechaRealizaicon, descripcion,valor, idAlmacen);
         this.idAlmacenDonador = idAlmacenDonador;
         this.idAlmacenRecibidor = idAlmacenRecibidor;

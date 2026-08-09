@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class GestionAlmacen {
 
-    private static ArrayList<Almacen> listaAlmacenes = new ArrayList<Almacen>();
+    private static ArrayList<Almacen> listaAlmacenes = new ArrayList<>();
 
     public static void mostrarAlmacenes() {
         if (listaAlmacenes.isEmpty()) {
@@ -28,7 +28,7 @@ public class GestionAlmacen {
     }
 
 
-    public static void guardarAlmacen() {
+    public static void CrearAlmacen() {
         Almacen almacenCreado = ServiceAlmacen.almSolAlm("AS", "ASDA", "ANGEL");
         listaAlmacenes.add(almacenCreado);
         System.out.println("Almacén añadido a la lista correctamente.");
@@ -36,6 +36,10 @@ public class GestionAlmacen {
 
     public void eliminarAlmacen(Almacen almacenSeleccionado) {
         listaAlmacenes.remove(almacenSeleccionado);
+    }
+
+    public void editarAlmacen(){
+
     }
 
     public void seleccionarAlmacen(){
