@@ -10,7 +10,7 @@ public class MenuUI {
 
     public static void menu(){
         GestionAlmacen.mostrarAlmacenes();
-        GestionAlmacen.comprobarExsistencia();
+        GestionAlmacen.seleccionadorAutomaticoCreadorInicial();
         seleccionAlmacen();
     }
 

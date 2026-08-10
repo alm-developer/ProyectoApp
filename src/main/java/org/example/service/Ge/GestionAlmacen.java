@@ -38,14 +38,13 @@ public class GestionAlmacen {
 
     }
 
-    public static String getAlmacenSeleccioado() {
+    public static String getAlmacenSeleccionado() {
         return almacenSeleccionado;
     }
 
     public static void CrearAlmacen(String nombre, String titular) {
-
         String codigoFinal = "D" + idAlmacen;
-        Almacen almacenCreado = ServiceAlmacen.almSolAlm(String.valueOf(idAlmacen), nombre, titular);
+        Almacen almacenCreado = ServiceAlmacen.almSolAlm(String.valueOf(codigoFinal), nombre, titular);
         listaAlmacenes.add(almacenCreado);
         System.out.println("Almacén añadido a la lista correctamente.");
         idAlmacen++;
@@ -61,10 +60,8 @@ public class GestionAlmacen {
             System.out.println("Almacen seleccionado");
 
         } else{
-            System.out.println("El id de almacen" + idAlmacen + "no coincide con ninguno");
-        }
+            System.out.println("El id de almacén " + idAlmacen + " no coincide con ninguno.");        }
     }
-
 
     public static boolean BuscarAlmacen(String idBuscado) {
         for (Almacen Almacen : listaAlmacenes) {
@@ -75,34 +72,25 @@ public class GestionAlmacen {
         return false;
     }
 
-    public static void crearAutomatico(){
-        if (GestionAlmacen.getListaAlmacenes().isEmpty()){
-            GestionAlmacen.Crear();
-            Almacen recienCreado = GestionAlmacen.getListaAlmacenes().get(GestionAlmacen.getListaAlmacenes().size() - 1);
-            seleccionarAlmacen(recienCreado.getIdAlmacen());
-
-        }
-
-    }
-    public static void Crear(){
-        System.out.println("----Advertencia----");
-        System.out.println("Debes crear primero un almacen");
-        System.out.println("-------------------");
-        CrearAlmacenUI.IntroducirDatos();
-
-    }
-    public static void comprobarExsistencia() {
+    public static void seleccionadorAutomaticoCreadorInicial() {
         if (GestionAlmacen.getListaAlmacenes().isEmpty()) {
-            System.out.println("----Advertencia----");
-            System.out.println("Debes crear primero un almacen");
-            System.out.println("-------------------");
+            System.out.println("---- Advertencia ----");
+            System.out.println("Debes crear primero un almacén.");
+            System.out.println("---------------------");
+
             CrearAlmacenUI.IntroducirDatos();
 
+            Almacen recienCreado = GestionAlmacen.getListaAlmacenes().get(GestionAlmacen.getListaAlmacenes().size() - 1);
+            almacenSeleccionado = (recienCreado.getIdAlmacen());
         }
+
+    }
+
+
 
 
     }
-}
+
 
 
 
