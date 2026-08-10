@@ -10,7 +10,7 @@ public abstract class Operaciones {
 
     private String idPreOperacion;
     private String nombre;
-    private String Fecha;
+    private String fecha;
     private double resultado;
     private boolean penRes;
     private String idAlmacen;
@@ -18,7 +18,7 @@ public abstract class Operaciones {
     public Operaciones(String idPreOperacion, String nombre, String fecha, boolean penRes, String idAlmacen ) {
         this.idPreOperacion = idPreOperacion;
         this.nombre = nombre;
-        this.Fecha = fecha;
+        this.fecha = fecha;
         this.listaProVenCom = listaProVenCom;
         this.resultado = 0.0;
         this.penRes = penRes;

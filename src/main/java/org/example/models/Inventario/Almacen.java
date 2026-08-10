@@ -29,6 +29,10 @@ public class Almacen {
         System.out.println("Almacén añadido a la lista correctamente.");
     }
 
+    public String getIdAlmacen() {
+        return idAlmacen;
+    }
+
     public void eliminarProducto(Producto productoSeleccionado){
         listaProductos.remove(productoSeleccionado);
     }
@@ -42,9 +46,6 @@ public class Almacen {
         return nombre;
     }
 
-    public String getIdAlmacen() {
-        return idAlmacen;
-    }
 
 
 

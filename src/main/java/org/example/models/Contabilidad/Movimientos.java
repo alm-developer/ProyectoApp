@@ -6,8 +6,8 @@ import java.util.Date;
 public abstract class Movimientos {
         private String idMovimiento;
         private String nombre;
-        private LocalDate FechaRealizaicon;
-        private String Descripcion;
+        private LocalDate fechaRealizaicon;
+        private String descripcion;
         private String IdAlmacen;
         private double valor;
 
@@ -15,8 +15,8 @@ public abstract class Movimientos {
     public Movimientos(String idMovimiento, String nombre, LocalDate fechaRealizaicon, String descripcion, double valor, String idAlmacen ) {
         this.idMovimiento = idMovimiento;
         this.nombre = nombre;
-        this.FechaRealizaicon = fechaRealizaicon;
-        this.Descripcion = descripcion;
+        this.fechaRealizaicon = fechaRealizaicon;
+        this.descripcion = descripcion;
         this.valor = 0.0;
         this.IdAlmacen = idAlmacen;
 
@@ -27,11 +27,11 @@ public abstract class Movimientos {
     }
 
     public LocalDate getFechaRealizaicon() {
-        return FechaRealizaicon;
+        return fechaRealizaicon;
     }
 
     public String getDescripcion() {
-        return Descripcion;
+        return descripcion;
     }
 
     public String getIdAlmacen() {

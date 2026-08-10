@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class Notas {
     private String idNotas;
-    private String Titulo;
-    private Date FechaReal;
+    private String titulo;
+    private Date fechaReal;
 
     public Notas(String idNotas, String titulo, Date fechaReal, String idAlmacen) {
         this.idNotas = idNotas;
-        Titulo = titulo;
-        FechaReal = fechaReal;
+        this.titulo = titulo;
+        fechaReal = fechaReal;
         IdAlmacen = idAlmacen;
     }
 

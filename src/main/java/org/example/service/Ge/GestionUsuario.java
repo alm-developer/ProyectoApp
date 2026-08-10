@@ -24,7 +24,7 @@ public class GestionUsuario {
 
     }
 
-    public static void EliminarCuenta(){
+    public static void eliminarCuenta(){
 
     }
 
