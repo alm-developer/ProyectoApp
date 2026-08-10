@@ -78,7 +78,8 @@ public class GestionAlmacen {
     public static void crearAutomatico(){
         if (GestionAlmacen.getListaAlmacenes().isEmpty()){
             GestionAlmacen.Crear();
-            GestionAlmacen.seleccionarAlmacen();
+            Almacen recienCreado = GestionAlmacen.getListaAlmacenes().get(GestionAlmacen.getListaAlmacenes().size() - 1);
+            seleccionarAlmacen(recienCreado.getIdAlmacen());
 
         }
 

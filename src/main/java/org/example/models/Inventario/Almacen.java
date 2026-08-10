@@ -30,7 +30,7 @@ public class Almacen {
     }
 
     public String getIdAlmacen() {
-        return idAlmacen;
+        return this.idAlmacen;
     }
 
     public void eliminarProducto(Producto productoSeleccionado){
