@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class GestionUsuario {
 
-    private static ArrayList<Usuario> Usuarios = new ArrayList<Usuario>();
+     ArrayList<Usuario> Usuarios = new ArrayList<Usuario>();
 
 
     public static void RegistrarUsuario() {

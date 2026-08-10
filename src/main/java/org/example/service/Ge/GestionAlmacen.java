@@ -9,8 +9,6 @@ import java.util.Scanner;
 
 public class GestionAlmacen {
 
-
-
     private final Scanner lector = new Scanner(System.in);
     private static String almacenSeleccionado;
     private static int idAlmacen = 0;

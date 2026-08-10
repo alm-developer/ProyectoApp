@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class GestionCaja {
 
-    private static ArrayList<Caja> listaCajas = new ArrayList<Caja>();
+    ArrayList<Caja> listaCajas = new ArrayList<Caja>();
 
     public void ingresar(){
 
