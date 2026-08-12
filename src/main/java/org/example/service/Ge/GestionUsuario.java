@@ -12,15 +12,15 @@ public class GestionUsuario {
      ArrayList<Usuario> Usuarios = new ArrayList<Usuario>();
 
 
-    public static void RegistrarUsuario() {
+    public static void registrarUsuario() {
 
     }
 
-    public static void IniciarSesion() {
+    public static void iniciarSesion() {
 
     }
 
-    public static void CerrarSesion(){
+    public static void cerrarSesion(){
 
     }
 

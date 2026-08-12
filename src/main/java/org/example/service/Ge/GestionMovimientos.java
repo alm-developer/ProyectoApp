@@ -21,6 +21,14 @@ public class GestionMovimientos {
     public void editarMovimiento(){
 
     }
+
+    public void buscarMovimiento(){
+
+    }
+
+    public void seleccionarMovimiento(){
+
+    }
 }
 
 

@@ -1,14 +1,8 @@
 
 
-1. Poner las listas en privado
-2. Cambiar las cosas innecesarias quitando el estatico de algunas ( statico solo exsiste en esa clase)
-
-  Este fragmento obtiene la lista de almacenes,
-  obtiene el tamaño y luego le resta uno para asignarle el primer objeto de la lista,
-  que es basicamente el almacen que acabamos de crear cuando la lista esta en cero,
-  y luego hemos obtenido el id y lo hemos seleccionado,
-  creamos una "variable" tipo almacen para guardar el objeto
-
-  Almacen recienCreado = GestionAlmacen.getListaAlmacenes().get(GestionAlmacen.getListaAlmacenes().size() - 1);
-  seleccionarAlmacen(recienCreado.getIdAlmacen());
-
+1. PONER LAS LISTAS EN PRIVADO
+2. PONER BIEN ATRIBUTOS EN LAS CLASES MODELO Y DEJARLO TODO LISTO (SABER SI ES ESTATICO O NO ETC)
+4. LOS FILTROS VAN A IR A UNA CLASE LLAMADA SERVICEFILTRO
+3. DEFINIR QUE METODOS NECESITO PARA QUE COSA
+4. EMPEZAR CON LA UI Y LAS VALIDACIONES Y GESTORES
+3. EMPEZAR CON LA UI Y LAS VALIDACIONES Y LOS GESTORES

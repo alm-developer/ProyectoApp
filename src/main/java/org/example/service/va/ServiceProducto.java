@@ -6,7 +6,6 @@ public class ServiceProducto {
 
 
     public static Producto proSolAlm(String idProducto, String nombre, String descripcion, double precioAdquisicion, double precioVenta){
-
         return null;
     }
 

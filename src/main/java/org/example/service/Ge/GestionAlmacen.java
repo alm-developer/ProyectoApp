@@ -14,7 +14,6 @@ public class GestionAlmacen {
     private static int idAlmacen = 0;
 
     private static ArrayList<Almacen> listaAlmacenes = new ArrayList<>();
-    private int contador = 0;
 
     public static ArrayList<Almacen> getListaAlmacenes() {
         return listaAlmacenes;
@@ -48,6 +47,10 @@ public class GestionAlmacen {
         listaAlmacenes.add(almacenCreado);
         System.out.println("Almacén añadido a la lista correctamente.");
         idAlmacen++;
+    }
+
+    public static void editarAlmacen(String idAlmacen){
+
     }
 
     public void eliminarAlmacen(Almacen almacenSeleccionado) {

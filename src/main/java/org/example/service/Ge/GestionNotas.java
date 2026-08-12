@@ -21,5 +21,13 @@ public class GestionNotas {
 
     }
 
+    public void buscarNotas(){
+
+    }
+
+    public void seleccionarNotas(){
+
+    }
+
 
 }
