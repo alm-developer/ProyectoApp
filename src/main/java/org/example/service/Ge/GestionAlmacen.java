@@ -80,7 +80,6 @@ public class GestionAlmacen {
             System.out.println("Debes crear primero un almacén.");
             System.out.println("---------------------");
 
-            CrearAlmacenUI.IntroducirDatos();
 
             Almacen recienCreado = GestionAlmacen.getListaAlmacenes().get(GestionAlmacen.getListaAlmacenes().size() - 1);
             almacenSeleccionado = (recienCreado.getIdAlmacen());
