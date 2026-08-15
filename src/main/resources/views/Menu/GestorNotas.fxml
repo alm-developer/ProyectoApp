@@ -19,12 +19,11 @@
         <VBox alignment="TOP_CENTER" prefWidth="200.0" spacing="12.0" style="-fx-background-color: #f4f5f7; -fx-padding: 15;" BorderPane.alignment="CENTER">
             <children>
                 <ImageView fitHeight="161.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #2563eb;" text="PERSONAS" textAlignment="CENTER" />
+                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #2563eb;" text="NOTAS" textAlignment="CENTER" />
                 <Button fx:id="btnVentas" maxWidth="Infinity" text="CREAR" />
                 <Button fx:id="btnInventario1" maxWidth="Infinity" text="ELIMINAR" />
-                <Button fx:id="btnInventario" alignment="CENTER" maxWidth="Infinity" text="EDITAR" />
                 <Button fx:id="btnInventario2" alignment="CENTER" maxWidth="Infinity" text="SELECCIONAR" />
-                <Button fx:id="btnInventario21" alignment="CENTER" maxWidth="Infinity" text="VER ALMACEN" />
+                <Button fx:id="btnInventario21" alignment="CENTER" maxWidth="Infinity" text="CAMBIAR CUENTA" />
             </children>
         </VBox>
     </left>
@@ -44,15 +43,10 @@
                 <Label />
                 <TableView prefHeight="549.0" prefWidth="649.0">
                     <columns>
-                        <TableColumn prefWidth="89.5999721288681" text="Nombre" />
-                        <TableColumn minWidth="0.0" prefWidth="213.60008239746094" text="Descripcion" />
-                  <TableColumn prefWidth="110.4000244140625" text="Confianza" />
-                  <TableColumn prefWidth="92.0" text="NºOperaciones" />
-                  <TableColumn prefWidth="158.39996337890625" text="Tipo Persona" />
+                        <TableColumn prefWidth="138.40003621578217" text="Titulo" />
+                        <TableColumn prefWidth="128.0" text="Fecha" />
+                  <TableColumn prefWidth="380.79996948242183" text="Descripcion" />
                     </columns>
-               <columnResizePolicy>
-                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-               </columnResizePolicy>
                 </TableView>
             </children>
         </VBox>
