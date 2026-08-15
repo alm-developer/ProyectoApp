@@ -1,12 +1,11 @@
-package org.example.Controllers;
+package org.example.Controllers.Seguridad;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Hyperlink;
 
 import java.awt.*;
 
-public class InicioSesionController {
-
+public class RegistroController {
     @FXML
     private TextField IdEntradaUsuario;
 
@@ -14,13 +13,13 @@ public class InicioSesionController {
     private TextField idEntradaContraseña;
 
     @FXML
-    Button idBtnConfirmarInicioSesion;
+    private TextField idEntradaRepetirContra;
 
     @FXML
-    Hyperlink IdNoCuenta;
+    Button idBtnConfirmarRegistro;
 
     @FXML
-    Hyperlink OlvidoContraseña;
+    Hyperlink idYaCuenta;
 
     @FXML
     Label IdMostrarErrores;
