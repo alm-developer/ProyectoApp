@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
 <BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.MenuController">
 
@@ -18,37 +20,32 @@
             <children>
                 <ImageView fitHeight="161.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
                 <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #2563eb;" text="ALMACENES" textAlignment="CENTER" />
-                <Button fx:id="btnVentas" maxWidth="Infinity" onAction="#handleVentas" text="CREAR" />
-                <Button fx:id="btnInventario1" maxWidth="Infinity" onAction="#handleInventario" text="ELIMINAR" />
-                <Button fx:id="btnInventario" alignment="CENTER" maxWidth="Infinity" onAction="#handleInventario" text="EDITAR" />
-            <Button fx:id="btnInventario2" alignment="BASELINE_LEFT" maxWidth="Infinity" onAction="#handleInventario" text="SELECCIONAR" />
-            <Button fx:id="btnInventario21" alignment="BASELINE_LEFT" maxWidth="Infinity" onAction="#handleInventario" style="-fx-background-color: #ef4444;" text="MENU" />
+                <Button fx:id="btnVentas" maxWidth="Infinity" text="CREAR" />
+                <Button fx:id="btnInventario1" maxWidth="Infinity" text="ELIMINAR" />
+                <Button fx:id="btnInventario" alignment="CENTER" maxWidth="Infinity" text="EDITAR" />
+            <Button fx:id="btnInventario2" alignment="BASELINE_LEFT" maxWidth="Infinity" text="SELECCIONAR" />
+            <Button fx:id="btnInventario21" alignment="BASELINE_LEFT" maxWidth="Infinity" text="CAMBIAR CUENTA" />
             </children>
         </VBox>
     </left>
    <center>
        <VBox style="-fx-padding: 10;">
          <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #87CEFA; -fx-background-radius: 4 4 4 4; -fx-padding: 3 3 3 3;">
+            <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="649.0" style="-fx-background-color: #87CEFA; -fx-background-radius: 4 4 4 4; -fx-padding: 3 3 3 3;">
                <children>
-                  <Label contentDisplay="CENTER" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" style="-fx-padding: 2 4 2 2;" text="USUARIO SELECCIONADO">
-                     <font>
-                        <Font name="Malgun Gothic Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="483.0" style="-fx-padding: 0 0 0 10; -fx-background-color: #ffffff; -fx-background-radius: 2 2 2 2;" text="Nombre del usuario">
-                     <font>
-                        <Font name="Tahoma" size="13.0" />
-                     </font>
-                  </Label>
+                  <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="437.0" promptText="ESCRIBE AQUI Y SELECCIONA PORQUE VALOR LO QUIERES FILTRAR" style="-fx-background-color: FFFF; -fx-padding: 4 4 4 4;" />
+                  <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="201.0" promptText="FILTRAR POR" style="-fx-padding: 0 0 0 0;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ComboBox>
                </children>
             </HBox>
             <Label />
-            <TableView prefHeight="588.0" prefWidth="649.0">
+            <TableView prefHeight="549.0" prefWidth="649.0">
               <columns>
                 <TableColumn prefWidth="125.59997975826263" text="Nombre Almacen" />
-                  <TableColumn prefWidth="110.40003204345703" text="Titular" />
-                  <TableColumn prefWidth="412.7998962402344" text="Descripcion" />
+                  <TableColumn prefWidth="510.39994049072266" text="Titular" />
               </columns>
             </TableView>
          </children>

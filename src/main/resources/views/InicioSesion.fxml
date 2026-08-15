@@ -13,9 +13,9 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.InicioSesionController">
    <children>
-      <Pane layoutY="23.0" prefHeight="400.0" prefWidth="600.0">
+      <Pane layoutY="11.0" prefHeight="400.0" prefWidth="600.0">
          <children>
-            <VBox alignment="TOP_CENTER" layoutX="132.0" layoutY="101.0" prefHeight="198.0" prefWidth="336.0">
+            <VBox alignment="TOP_CENTER" layoutX="132.0" layoutY="94.0" prefHeight="198.0" prefWidth="336.0">
                <children>
                   <Label alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="336.0" style="-fx-padding: 10 10 0 0;" text="INICIO SESION">
                      <font>
@@ -40,7 +40,7 @@
                      </opaqueInsets></Button>
                   <HBox prefHeight="15.0" prefWidth="336.0" style="-fx-padding: 2 2 2 2;">
                      <children>
-                        <Hyperlink prefHeight="24.0" prefWidth="240.0" text="¿No tienes cuenta?" />
+                        <Hyperlink id="IdNoCuenta" prefHeight="24.0" prefWidth="240.0" text="¿No tienes cuenta?" />
                         <Hyperlink alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="240.0" text="¿Has olvidado la contraseña?" />
                      </children>
                   </HBox>
