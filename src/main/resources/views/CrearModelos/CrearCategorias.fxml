@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="243.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="235.0" prefWidth="600.0">
+            <children>
+                <VBox alignment="TOP_CENTER" layoutX="4.0" layoutY="3.0" prefHeight="163.0" prefWidth="590.0">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="590.0" text="CREACION CATEGORIA" />
+                        <HBox prefHeight="30.0" prefWidth="590.0" spacing="4.0" style="-fx-padding: 4 4 4 4;">
+                            <children>
+                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" text="IdCategoria:" />
+                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" text="Aqui ira el id de Categoria" />
+                            </children>
+                        </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-padding: 4 4 4 4;">
+                     <children>
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" text="Almacen seleccionado" />
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" text="aqui ira el almacen seleccionado" />
+                     </children>
+                  </HBox>
+
+                              <VBox prefHeight="54.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
+                            <children>
+                        <HBox prefHeight="30.0" prefWidth="590.0" spacing="4.0" style="-fx-padding: 4 4 4 4;" />
+                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Nombre de la Categoria:" />
+                                <TextField />
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="54.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
+                            <children>
+                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Descripcion de la Categoria: ">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </Label>
+                        <TextArea prefHeight="200.0" prefWidth="200.0" />
+                                <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="590.0" spacing="4.0">
+                                    <children>
+                                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="cancelar" textAlignment="CENTER" />
+                                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="aceptar" textAlignment="CENTER" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</Pane>
