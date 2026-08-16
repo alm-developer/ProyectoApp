@@ -11,82 +11,82 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="683.0" stylesheets="@../../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <AnchorPane prefHeight="455.0" prefWidth="600.0">
+        <AnchorPane layoutX="41.0" layoutY="30.0" prefHeight="455.0" prefWidth="600.0">
             <children>
-                <VBox alignment="TOP_CENTER" layoutX="4.0" layoutY="3.0" prefHeight="309.0" prefWidth="590.0">
+                <VBox alignment="TOP_CENTER" layoutX="4.0" layoutY="3.0" prefHeight="309.0" prefWidth="590.0" styleClass="Hbox">
                     <children>
-                        <Label alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="590.0" text="Creacion de Producto" />
+                        <Label alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="590.0" styleClass="label-titulo" text="Creacion de Producto" />
                   <HBox prefHeight="15.0" prefWidth="590.0" spacing="4.0" style="-fx-padding: 4 4 4 4;">
                      <children>
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" style="-fx-padding: 4 4 4 4;" text="IdProducto: " />
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" style="-fx-padding: 4 4 4 4;" text="IdProducto" />
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" style="-fx-padding: 4 4 4 4;" styleClass="label-input" text="IdProducto: " />
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" style="-fx-padding: 4 4 4 4;" styleClass="label-input" text="IdProducto" />
                      </children>
                   </HBox>
                   <HBox prefHeight="30.0" prefWidth="590.0" spacing="4.0" style="-fx-padding: 4 4 4 4;">
                      <children>
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" style="-fx-padding: 4 4 4 4;" text="Almacen seleccionado: " />
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" style="-fx-padding: 4 4 4 4;" text="almacen seleccionado" />
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" style="-fx-padding: 4 4 4 4;" styleClass="label-input" text="Almacen seleccionado: " />
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" style="-fx-padding: 4 4 4 4;" styleClass="label-input" text="almacen seleccionado" />
                      </children>
                   </HBox>
                         <VBox prefHeight="54.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                             <children>
-                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Nombre de Producto: " />
-                                <TextField />
+                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="NOMBRE:" />
+                                <TextField styleClass="text-entradas" />
                             </children>
                         </VBox>
                         <VBox prefHeight="80.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                             <children>
-                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Descripcion: ">
+                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="DESCRIPCION:">
                                     <opaqueInsets>
                                         <Insets />
                                     </opaqueInsets>
                                 </Label>
-                        <TextArea prefHeight="46.0" prefWidth="582.0" />
+                        <TextArea prefHeight="46.0" prefWidth="582.0" styleClass="text-entradas" />
                             </children>
                         </VBox>
                   <VBox prefHeight="58.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                      <children>
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Stock: ">
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="STOCK:">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
                         </Label>
-                        <TextField />
+                        <TextField styleClass="text-entradas" />
                      </children>
                   </VBox>
                   <VBox prefHeight="58.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                      <children>
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Precio de Adqusicion: ">
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="PRECIO DE ADQUISICION:">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
                         </Label>
-                        <TextField />
+                        <TextField styleClass="text-entradas" />
                      </children>
                   </VBox>
                   <VBox prefHeight="58.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                      <children>
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Precio de Venta: ">
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="PRECIO DE VENTA:">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
                         </Label>
-                        <TextField />
+                        <TextField styleClass="text-entradas" />
                      </children>
                   </VBox>
                   <VBox prefHeight="58.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                      <children>
-                        <ComboBox prefHeight="26.0" prefWidth="588.0" promptText="Categoria" />
+                        <ComboBox prefHeight="26.0" prefWidth="588.0" promptText="Categoria" styleClass="combo-box-crear" />
                      </children>
                   </VBox>
                   <VBox prefHeight="58.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                      <children>
                         <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="590.0" spacing="4.0">
                            <children>
-                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="cancelar" textAlignment="CENTER" />
-                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="aceptar" textAlignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="cancelar" textAlignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="aceptar" textAlignment="CENTER" />
                            </children>
                         </HBox>
                      </children>

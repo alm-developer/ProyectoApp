@@ -10,47 +10,47 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="634.0" styleClass="root" stylesheets="@../../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <AnchorPane prefHeight="274.0" prefWidth="600.0">
+        <AnchorPane layoutX="17.0" layoutY="20.0" prefHeight="292.0" prefWidth="600.0">
             <children>
-                <VBox alignment="TOP_CENTER" layoutX="4.0" layoutY="3.0" prefHeight="274.0" prefWidth="590.0">
+                <VBox alignment="TOP_CENTER" layoutX="4.0" layoutY="3.0" prefHeight="292.0" prefWidth="590.0" spacing="2.0" styleClass="Hbox">
                     <children>
-                        <Label alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="590.0" text="CREAR NOTA" />
+                        <Label alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="590.0" styleClass="label-titulo" stylesheets="@../../../estilos/estilos.css" text="CREAR NOTA" />
                         <HBox prefHeight="30.0" prefWidth="590.0" spacing="4.0" style="-fx-padding: 4 4 4 4;">
                             <children>
-                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" text="IdAlmacen:" />
-                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" text="Aqui ira el id del almacen" />
+                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="IdAlmacen:" />
+                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="Aqui ira el id del almacen" />
                             </children>
                         </HBox>
                   <VBox prefHeight="13.0" prefWidth="590.0">
                      <children>
-                        <HBox prefHeight="30.0" prefWidth="590.0" spacing="4.0" style="-fx-padding: 4 4 4 4;">
+                        <HBox prefHeight="30.0" prefWidth="590.0" spacing="4.0" style="-fx-padding: 4 4 4 4;" stylesheets="@../../../estilos/estilos.css">
                            <children>
-                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" text="IdNota :" />
-                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" text="Aqui ira el id de la nota" />
+                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="IdNota :" />
+                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="Aqui ira el id de la nota" />
                            </children>
                         </HBox>
                      </children>
                   </VBox>
                         <VBox prefHeight="54.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                             <children>
-                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Titulo de la nota:" />
-                                <TextField />
+                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="TITULO DE LA NOTA:" />
+                                <TextField styleClass="text-entradas" />
                             </children>
                         </VBox>
-                        <VBox prefHeight="194.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
+                        <VBox prefHeight="162.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                             <children>
-                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Descripcion">
+                                <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" stylesheets="@../../../estilos/estilos.css" text="DESCRIPCION:">
                                     <opaqueInsets>
                                         <Insets />
                                     </opaqueInsets>
                                 </Label>
-                        <TextArea prefHeight="109.0" prefWidth="582.0" />
-                                <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="590.0" spacing="4.0">
+                        <TextArea prefHeight="97.0" prefWidth="582.0" styleClass="text-entradas" />
+                                <HBox alignment="TOP_RIGHT" prefHeight="46.0" prefWidth="582.0" spacing="4.0">
                                     <children>
-                                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="cancelar" textAlignment="CENTER" />
-                                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="aceptar" textAlignment="CENTER" />
+                                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="10.0" prefWidth="91.0" styleClass="button-inicio-registro" text="cancelar" textAlignment="CENTER" />
+                                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="aceptar" textAlignment="CENTER" />
                                     </children>
                                 </HBox>
                             </children>

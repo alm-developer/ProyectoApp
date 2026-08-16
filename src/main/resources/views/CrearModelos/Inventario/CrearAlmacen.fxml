@@ -9,38 +9,37 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="646.0" styleClass="root" stylesheets="@../../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="137.0" prefWidth="600.0">
+      <AnchorPane layoutX="23.0" layoutY="27.0" prefHeight="137.0" prefWidth="600.0">
          <children>
-            <VBox alignment="TOP_CENTER" layoutX="4.0" layoutY="3.0" prefHeight="163.0" prefWidth="590.0">
+            <VBox alignment="TOP_CENTER" layoutX="5.0" layoutY="-4.0" prefHeight="163.0" prefWidth="590.0" styleClass="Hbox" stylesheets="@../../../estilos/estilos.css">
                <children>
-                  <Label alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="590.0" text="CREACION ALMACEN" />
+                  <Label alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="590.0" styleClass="label-titulo" text="CREACION ALMACEN" />
                   <HBox prefHeight="30.0" prefWidth="590.0" spacing="4.0" style="-fx-padding: 4 4 4 4;">
                      <children>
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" text="IdAlmacen:" />
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" text="Aqui ira el id del almacen" />
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="IdAlmacen:" />
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="Aqui ira el id del almacen" />
                      </children>
                   </HBox>
                   <VBox prefHeight="54.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                      <children>
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Nombre del Almacen:" />
-                        <TextField />
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="NOMBRE:" />
+                        <TextField styleClass="text-entradas" />
                      </children>
                   </VBox>
                   <VBox prefHeight="54.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                      <children>
-                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" text="Titular del Almacen:">
+                        <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="TITULAR:">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
                         </Label>
-                        <TextField style="-fx-padding: 3 3 3 3;" />
+                        <TextField style="-fx-padding: 3 3 3 3;" styleClass="text-entradas" />
                         <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="590.0" spacing="4.0">
                            <children>
-                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="cancelar" textAlignment="CENTER" />
-                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" text="aceptar" textAlignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="cancelar" textAlignment="CENTER" />
+                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="aceptar" textAlignment="CENTER" />
                            </children>
                         </HBox>
                      </children>
