@@ -50,6 +50,13 @@
     -fx-font-family: "Ebrima";
     -fx-background-color: #DFDCE6;
     -fx-background-radius: 3;
+
+}
+.combo-box-crear-derecha{
+    -fx-font-family: "Ebrima";
+    -fx-background-color: #3b82f6 ;
+    -fx-background-radius: 8px;
+
 }
 .CheckBox-crear{
     -fx-font-family: "Ebrima";
@@ -58,9 +65,20 @@
 }
 .Hbox-Filtros{
     -fx-background-color: #2f3136;
-    -fx-background-radius: 15;
+    -fx-background-radius: 4 4 4 4;
+
 }
 
+.ComboGestion  .list-cell {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+}
+
+.comboIzquierda2 *.text-field {
+    -fx-text-fill: #ffffff;
+
+}
 .ParteDerechaGestores {
     -fx-background-color: #2f3136;
     -fx-padding: 10;
@@ -69,7 +87,7 @@
 .table-view {
     -fx-background-color: Transparent;
     -fx-background-radius: 4 4 0 0;
-    -fx-border-radius: 4 4 4 4git ;
+    -fx-border-radius: 4 4 4 4 ;
     -fx-border-color: rgba(255, 255, 255, 0.08);
     -fx-padding: 4 4 4 4;
 }

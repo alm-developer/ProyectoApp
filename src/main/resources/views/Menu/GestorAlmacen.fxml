@@ -31,7 +31,7 @@
     <center>
         <VBox prefHeight="607.0" prefWidth="670.0" spacing="4.0" style="-fx-padding: 10;">
             <children>
-                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="649.0" spacing="2.0" style="-fx-background-radius: 4 4 4 4; -fx-padding: 3 3 3 3;" styleClass="Hbox-Filtros">
+                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="649.0" spacing="2.0" style="-fx-padding: 3 3 3 3;" styleClass="Hbox-Filtros">
                     <children>
                         <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="437.0" promptText="ESCRIBE AQUI Y SELECCIONA PORQUE VALOR LO QUIERES FILTRAR" style="-fx-padding: 4 4 4 4;" />
                         <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="201.0" promptText="FILTRAR POR" style="-fx-padding: 0 0 0 0;" styleClass="combo-box-crear">
