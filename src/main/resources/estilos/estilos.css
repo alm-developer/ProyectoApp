@@ -56,5 +56,20 @@
     -fx-background-color: #DFDCE6;
     -fx-background-radius: 3;
 }
+.Hbox-Filtros{
+    -fx-background-color: #2f3136;
+    -fx-background-radius: 15;
+}
 
+.ParteDerechaGestores {
+    -fx-background-color: #2f3136;
+    -fx-padding: 10;
+}
 
+.table-view {
+    -fx-background-color: Transparent;
+    -fx-background-radius: 4 4 0 0;
+    -fx-border-radius: 4 4 4 4git ;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-padding: 4 4 4 4;
+}

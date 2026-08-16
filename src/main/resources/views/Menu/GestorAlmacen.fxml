@@ -12,42 +12,45 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.Menu.AlmacenController">
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controllers.Menu.AlmacenController">
 
     <!-- BARRA LATERAL (IZQUIERDA) -->
     <left>
-        <VBox alignment="TOP_CENTER" prefWidth="200.0" spacing="12.0" style="-fx-background-color: #f4f5f7; -fx-padding: 15;" BorderPane.alignment="CENTER">
+        <VBox alignment="TOP_CENTER" prefWidth="200.0" spacing="12.0" style="-fx-padding: 15;" styleClass="ParteDerechaGestores" stylesheets="@../../estilos/estilos.css" BorderPane.alignment="CENTER">
             <children>
                 <ImageView fitHeight="161.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" style="-fx-background-color: #2563eb;" text="ALMACENES" textAlignment="CENTER" />
-                <Button fx:id="btnVentas" maxWidth="Infinity" text="CREAR" />
-                <Button fx:id="btnInventario1" maxWidth="Infinity" text="ELIMINAR" />
-                <Button fx:id="btnInventario" alignment="CENTER" maxWidth="Infinity" text="EDITAR" />
-                <Button fx:id="btnInventario2" alignment="CENTER" maxWidth="Infinity" text="SELECCIONAR" />
-                <Button fx:id="btnInventario21" alignment="CENTER" maxWidth="Infinity" text="CAMBIAR CUENTA" />
+                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="label-titulo" stylesheets="@../../estilos/estilos.css" text="ALMACENES" textAlignment="CENTER" />
+                <Button fx:id="btnVentas" maxWidth="Infinity" styleClass="button-inicio-registro" text="CREAR" />
+                <Button fx:id="btnInventario1" maxWidth="Infinity" styleClass="button-inicio-registro" text="ELIMINAR" />
+                <Button fx:id="btnInventario" alignment="CENTER" maxWidth="Infinity" styleClass="button-inicio-registro" text="EDITAR" />
+                <Button fx:id="btnInventario2" alignment="CENTER" maxWidth="Infinity" styleClass="button-inicio-registro" text="SELECCIONAR" />
+                <Button fx:id="btnInventario21" alignment="CENTER" maxWidth="Infinity" styleClass="button-inicio-registro" text="CAMBIAR CUENTA" />
             </children>
         </VBox>
     </left>
     <center>
-        <VBox style="-fx-padding: 10;">
+        <VBox prefHeight="607.0" prefWidth="670.0" spacing="4.0" style="-fx-padding: 10;">
             <children>
-                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="649.0" style="-fx-background-color: #87CEFA; -fx-background-radius: 4 4 4 4; -fx-padding: 3 3 3 3;">
+                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="649.0" spacing="2.0" style="-fx-background-radius: 4 4 4 4; -fx-padding: 3 3 3 3;" styleClass="Hbox-Filtros">
                     <children>
-                        <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="437.0" promptText="ESCRIBE AQUI Y SELECCIONA PORQUE VALOR LO QUIERES FILTRAR" style="-fx-background-color: FFFF; -fx-padding: 4 4 4 4;" />
-                        <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="201.0" promptText="FILTRAR POR" style="-fx-padding: 0 0 0 0;">
+                        <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="437.0" promptText="ESCRIBE AQUI Y SELECCIONA PORQUE VALOR LO QUIERES FILTRAR" style="-fx-padding: 4 4 4 4;" />
+                        <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="201.0" promptText="FILTRAR POR" style="-fx-padding: 0 0 0 0;" styleClass="combo-box-crear">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
                         </ComboBox>
                     </children>
                 </HBox>
-                <Label />
-                <TableView prefHeight="549.0" prefWidth="649.0">
-                    <columns>
-                        <TableColumn prefWidth="125.59997975826263" text="Nombre Almacen" />
-                        <TableColumn prefWidth="522.4000137329101" text="Titular" />
-                    </columns>
-                </TableView>
+            <VBox prefHeight="566.0" prefWidth="649.0">
+               <children>
+                      <TableView prefHeight="562.0" prefWidth="649.0">
+                          <columns>
+                              <TableColumn prefWidth="125.59997975826263" style="padding: 1 1 1 1;" text="Nombre Almacen" />
+                              <TableColumn prefWidth="522.4000137329101" text="Titular" />
+                          </columns>
+                      </TableView>
+               </children>
+            </VBox>
             </children>
         </VBox>
     </center>
