@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Seguridad.InicioSesionController">
    <children>
-      <Pane prefHeight="411.0" prefWidth="600.0" styleClass="root" stylesheets="@../../estilos/estilos.css">
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="411.0" prefWidth="600.0" styleClass="root" stylesheets="@../../estilos/estilos.css">
          <children>
             <VBox alignment="TOP_CENTER" layoutX="132.0" layoutY="95.0" prefHeight="198.0" prefWidth="336.0" styleClass="Hbox" stylesheets="@../../estilos/estilos.css">
                <children>

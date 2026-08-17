@@ -12,15 +12,17 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-            Parent root = FXMLLoader.load(getClass().getResource("/org/example/views/InicioSesion.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/views/seguridad/InicioSesion.fxml"));
             Scene scene = new Scene(root, 600, 400);
             primaryStage.setTitle("Inicio de Sesión");
             primaryStage.setScene(scene);
+            primaryStage.setFullScreen(true);
             primaryStage.setResizable(false);
             primaryStage.show();
 
     }
-        public static void main(String[] args){ launch(args);
+        public static void main(String[] args){
+        launch(args);
     }
 
 }
