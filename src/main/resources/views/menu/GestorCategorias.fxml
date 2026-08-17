@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Menu.AlmacenController">
+
+    <!-- BARRA LATERAL (IZQUIERDA) -->
+    <left>
+        <VBox alignment="TOP_CENTER" prefWidth="200.0" spacing="12.0" style="-fx-padding: 15;" styleClass="ParteDerechaGestores" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="161.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="label-titulo" text="CATEGORIAS" textAlignment="CENTER" />
+                <Button fx:id="btnVentas" maxWidth="Infinity" styleClass="button-inicio-registro" text="CREAR" />
+                <Button fx:id="btnInventario1" maxWidth="Infinity" styleClass="button-inicio-registro" text="ELIMINAR" />
+                <Button fx:id="btnInventario" alignment="CENTER" maxWidth="Infinity" styleClass="button-inicio-registro" text="EDITAR" />
+                <Button fx:id="btnInventario2" alignment="CENTER" maxWidth="Infinity" styleClass="button-inicio-registro" text="SELECCIONAR" />
+                <Button fx:id="btnInventario21" alignment="CENTER" maxWidth="Infinity" styleClass="button-inicio-registro" text="VER PRODUCTOS" />
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <VBox style="-fx-padding: 10;">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="649.0" spacing="2.0" style="-fx-padding: 3 3 3 3;" styleClass="Hbox-Filtros">
+                    <children>
+                        <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="437.0" promptText="ESCRIBE AQUI Y SELECCIONA PORQUE VALOR LO QUIERES FILTRAR" style="-fx-padding: 4 4 4 4;" styleClass="text-entradas-crear" />
+                        <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="201.0" promptText="FILTRAR POR" style="-fx-padding: 0 0 0 0;" styleClass="combo-box-crear">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </ComboBox>
+                    </children>
+                </HBox>
+            <VBox prefHeight="554.0" prefWidth="649.0">
+               <children>
+                      <TableView prefHeight="555.0" prefWidth="649.0">
+                          <columns>
+                              <TableColumn prefWidth="125.59997975826263" text="Nombre" />
+                              <TableColumn prefWidth="521.5999526977539" text="Descripcion" />
+                          </columns>
+                      </TableView>
+               </children>
+            </VBox>
+            </children>
+        </VBox>
+    </center>
+
+</BorderPane>
