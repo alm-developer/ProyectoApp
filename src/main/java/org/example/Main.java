@@ -12,9 +12,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-            Parent root = FXMLLoader.load(getClass().getResource("/views/seguridad/InicioSesion.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/views/seguridad/RegistroSesion.fxml"));
             Scene scene = new Scene(root);
-            primaryStage.setTitle("Inicio de Sesión");
+            primaryStage.setTitle("Registro Usuario");
             primaryStage.setScene(scene);
             primaryStage.setFullScreen(true);
             primaryStage.setResizable(false);
