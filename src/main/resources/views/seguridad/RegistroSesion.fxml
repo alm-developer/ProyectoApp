@@ -5,54 +5,77 @@
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Seguridad.RegistroController">
-    <children>
-        <Pane prefHeight="412.0" prefWidth="600.0" styleClass="root" stylesheets="@../../estilos/estilos.css">
+<BorderPane styleClass="root" stylesheets="@../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
             <children>
-                <VBox alignment="TOP_CENTER" layoutX="132.0" layoutY="68.0" prefHeight="198.0" prefWidth="336.0" styleClass="Hbox" stylesheets="@../../estilos/estilos.css">
+                <VBox alignment="CENTER" prefHeight="450.0" prefWidth="430.0" HBox.hgrow="ALWAYS">
                     <children>
-                        <Label alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="336.0" style="-fx-padding: 10 10 0 0;" styleClass="label-titulo" stylesheets="@../../estilos/estilos.css" text="REGISTRO DE USUARIO">
-                            <font>
-                                <Font name="Cascadia Mono Regular" size="19.0" />
-                            </font>
-                        </Label>
-                        <VBox prefHeight="28.0" prefWidth="336.0" style="-fx-padding: 2 2 2 2;">
-                            <children>
-                                <Label styleClass="label-input" stylesheets="@../../estilos/estilos.css" text="USUARIO" />
-                                <TextField id="IdEntradaUsuario" style="-fx-padding: 3 3 3 3;" />
-                            </children>
-                        </VBox>
-                        <VBox prefHeight="51.0" prefWidth="336.0" style="-fx-padding: 3 3 3 3;">
-                            <children>
-                                <Label styleClass="label-input" stylesheets="@../../estilos/estilos.css" text="CONTRASEÑA" />
-                                <TextField id="idEntradaContraseña" />
-                            </children>
-                        </VBox>
-                  <VBox prefHeight="51.0" prefWidth="336.0" style="-fx-padding: 3 3 3 3;">
-                     <children>
-                        <Label styleClass="label-input" text="REPETIR CONTRASEÑA" />
-                        <TextField id="idEntradaRepetirContra" />
-                     </children>
-                  </VBox>
-                        <Button id="idBtnConfirmarRegistro" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="22.0" prefWidth="310.0" style="-fx-padding: 3 3 3 3;" styleClass="button-inicio-registro" text="Confirmar">
-                            <opaqueInsets>
-                                <Insets />
-                            </opaqueInsets></Button>
-                        <HBox prefHeight="15.0" prefWidth="336.0" style="-fx-padding: 2 2 2 2;">
-                            <children>
-                                <Hyperlink id="idYaCuenta" prefHeight="24.0" prefWidth="328.0" text="¿Ya tienes cuenta?" />
-                            </children>
-                        </HBox>
-                        <Label id="IdMostrarErrores" alignment="CENTER" prefHeight="38.0" prefWidth="333.0" style="-fx-padding: 7 5 5 5;" text="seccion de errores" />
+                        <ImageView fitHeight="168.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label styleClass="label-titulo" text="NOMBRE DE LA APP" />
                     </children>
                 </VBox>
+                <VBox alignment="CENTER" spacing="5.0" styleClass="Hbox" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="320.0" styleClass="label-titulo" stylesheets="@../../estilos/estilos.css" text="REGISTRO" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Label>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="215.0" styleClass="label-input" text="Usuario">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </Label>
+                        <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" styleClass="text-entradas-crear">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </TextField>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="215.0" styleClass="label-input" text="Contraseña">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </Label>
+                        <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" styleClass="text-entradas-crear">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </TextField>
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="215.0" styleClass="label-input" text="Repetir contraseña">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" styleClass="text-entradas-crear">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="31.0" prefWidth="341.0" styleClass="button-inicio-registro" text="confirmar" />
+                  <HBox prefHeight="15.0" prefWidth="342.1">
+                     <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <Hyperlink alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="155.0" text="¿Ya tienes cuenta?" textAlignment="RIGHT" />
+                     </children>
+                  </HBox>
+                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="334.0" styleClass="label-input" text="Errores">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </VBox>
             </children>
-        </Pane>
-    </children>
-</AnchorPane>
+        </HBox>
+    </center>
+</BorderPane>
