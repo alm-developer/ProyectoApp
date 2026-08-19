@@ -36,6 +36,7 @@ public class UsuarioDao {
             try (var resultSet = stmt.executeQuery()) {
                 //Si el resultado es mayor que cero devuelve true y si es cero devuelve false
                 //el column index es el numero de la columna de la consulta que queremos comparar
+                //el getint establece el resultado de la columna 1 en la variable
                 return resultSet.getInt(1) > 0;
             }
         } catch (SQLException e) {
@@ -51,10 +52,12 @@ public class UsuarioDao {
 
         try (Connection con = DatabaseConnection.conectar();PreparedStatement stmt = con.prepareStatement(sql);
         ){
+            //obtiene el id del usuario para poder eliminarlo de manera correcta
             stmt.setInt(1, usuarioObtenido.getIdUsuario());
 
+            //controlamos que se haya eliminado al ejecutar en una variable llamada filas afectadas
             int filasAfectadas = stmt.executeUpdate();
-            stmt.execute(sql);
+            //devuelve el valor false si las filas afectadas son menores que 0
             return filasAfectadas > 0;
         } catch (SQLException e) {
             e.printStackTrace();
