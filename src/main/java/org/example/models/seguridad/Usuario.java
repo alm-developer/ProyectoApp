@@ -3,14 +3,44 @@ package org.example.models.seguridad;
 import org.example.service.validacion.ServiceUsuario;
 
 public class Usuario {
-    private int IdUsuario;
+    private int idUsuario;
     private String nombre;
     private String contraseña;
 
-    public Usuario(String nombre, String contraseña) {
-        this.IdUsuario = 0;
+    public Usuario(int idUsuario, String nombre, String contraseña) {
+        this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.contraseña = contraseña;
-
     }
+
+    public Usuario(String nombre, String contraseña) {
+        this.nombre = nombre;
+        this.contraseña = contraseña;
+    }
+
+    public int getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        idUsuario = idUsuario;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+
 }

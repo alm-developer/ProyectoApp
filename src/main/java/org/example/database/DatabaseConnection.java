@@ -9,8 +9,7 @@ import java.sql.Statement;
 
 public class DatabaseConnection {
 
-    private static String url = "jdbc:sqlite:/BaseDatos/BaseDatos.sqlite";
-
+    private static String url = "jdbc:sqlite:BaseDatos/BaseDatos.sqlite";
     public static Connection conectar() {
         //Esto declara la conexion como null
         Connection con = null;

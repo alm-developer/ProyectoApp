@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:controller="org.example.controllers.Seguridad.RegistroSesionController" styleClass="root" stylesheets="@../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane styleClass="root" stylesheets="@../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Seguridad.RegistroSesionController">
     <center>
         <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
             <children>
@@ -65,7 +65,7 @@
                         <Hyperlink fx:id="idIrInicioSesion" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onAction="#irInicioSesion" prefHeight="24.0" prefWidth="155.0" text="¿Ya tienes cuenta?" textAlignment="RIGHT" />
                      </children>
                   </HBox>
-                        <Label fx:id="idTextoErrores" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="334.0" styleClass="label-errores" text="Errores">
+                        <Label fx:id="idTextoErrores" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="334.0" styleClass="label-errores">
                             <padding>
                                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                             </padding>

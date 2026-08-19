@@ -4,7 +4,7 @@ import javafx.scene.control.Alert;
 
 public class ServiceUsuario {
 
-    public static boolean validarUsuario(int idUsuario, String nombre, String contraseña, String repetirContraseña) {
+    public static boolean validarUsuario(String nombre, String contraseña, String repetirContraseña) {
 
         // esto es que si es nulo o contiene solo espacios salta el error
         if (nombre == null || nombre.isBlank()) {
