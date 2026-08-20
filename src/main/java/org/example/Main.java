@@ -34,7 +34,13 @@ public class Main extends Application {
     }
     public static void abrirVentana(String rutaFxml) throws IOException {
         try {
+            Parent root = FXMLLoader.load(Main.class.getResource(rutaFxml));
            //el loader debe de obener el fxml
+            Stage ventana = new Stage();
+            Scene escena = new Scene(root);
+            ventana.setScene(escena);
+            ventana.setResizable(false);
+            ventana.show();
             // luego se debe crear la stage con este
             //despues se debe definir la escena
             // despues el titulo y ademas que no se pueda hacer mas grande la ventana y despues el show muestra

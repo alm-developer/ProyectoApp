@@ -6,6 +6,7 @@ import org.example.models.seguridad.Usuario;
 import javax.print.DocFlavor;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UsuarioDao {
@@ -24,6 +25,27 @@ public class UsuarioDao {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public static boolean comprobarInicioSesion(Usuario usuario){
+
+        String sql = "SELECT nombre,contraseña FROM usuarios WHERE nombre = ? AND contraseña = ?";
+
+        try (Connection conn = DatabaseConnection.conectar(); PreparedStatement stmt = conn.prepareStatement(sql)){
+            // Simplemente le pasas los valores
+            stmt.setString(1, usuario.getNombre());
+            stmt.setString(2, usuario.getContraseña());
+
+            try (ResultSet rs = stmt.executeQuery()) {
+                // 2. Si rs.next() da true, significa que la consulta devolvió un registro
+                // (es decir, el usuario y contraseña existen y coinciden)
+                return rs.next();
+            }
+        } catch (SQLException e) {
+        e.printStackTrace();
+        }
+
+        return false;
     }
 
     public static boolean exsisteUsuario(String nombre) {
@@ -68,6 +90,8 @@ public class UsuarioDao {
         public static void editarUsuario (String nombre) {
 
         }
+
+
 
     }
 
