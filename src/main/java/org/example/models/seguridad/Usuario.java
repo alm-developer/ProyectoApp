@@ -7,6 +7,7 @@ public class Usuario {
     private String nombre;
     private String contraseña;
 
+
     public Usuario(int idUsuario, String nombre, String contraseña) {
         this.idUsuario = idUsuario;
         this.nombre = nombre;

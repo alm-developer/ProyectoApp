@@ -1,45 +1,28 @@
 package org.example.models.inventario;
 
-import org.example.service.validacion.ServiceProducto;
-
-import java.util.ArrayList;
-
 public class Almacen {
 
-    private ArrayList <Producto> listaProductos = new ArrayList<>();
 
-    private String idAlmacen;
+    private int idAlmacen;
     private String nombre;
     private String titular;
+    private int idUsuario;
 
-
-    public Almacen(String id_Almacen, String titular, String nombre) {
+    public Almacen(String titular, String nombre,int idUsuario ) {
+        this.titular = titular;
+        this.nombre = nombre;
+        this.idUsuario = idUsuario;
+    }
+    public Almacen(int id_Almacen, String titular, String nombre, int idUsuario) {
         this.idAlmacen = id_Almacen;
         this.titular = titular;
         this.nombre = nombre;
-    }
-
-
-    public void guardarProducto() {
-        Producto productoCreado = ServiceProducto.proSolAlm("34f", "nombre", "askdasdasdasdasd", 12.2d, 234.3d);
-        listaProductos.add(productoCreado);
-        System.out.println("Almacén añadido a la lista correctamente.");
-    }
-
-
-    public void eliminarProducto(Producto productoSeleccionado){
-        listaProductos.remove(productoSeleccionado);
-    }
-
-    public void editarProducto(Producto productoSeleccionado){
+        this.idUsuario = idUsuario;
 
     }
 
-    public ArrayList<Producto> getListaProductos() {
-        return listaProductos;
-    }
 
-    public String getIdAlmacen() {
+    public int getIdAlmacen() {
         return idAlmacen;
     }
 

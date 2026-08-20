@@ -29,6 +29,14 @@ public class DatabaseConnection {
             nombre TEXT NOT NULL,
             contraseña TEXT NOT NULL
         );
+        
+        CREATE TABLE IF NOT EXISTS almacenes (
+            idAlmacen integer PRIMARY KEY AUTOINCREMENT,
+            nombre TEXT NOT NULL,
+            titular TEXT NOT NULL,
+            idUsuario INTEGER NOT NULL,
+            FOREIGN KEY (idUsuario) REFERENCES usuarios(idUsuario)
+        )
         """;
 
         //es obligatorio obtener la conexion con el metodo anterior asi se lo pasas al stmt que tiene que trabajar a traves de ella.

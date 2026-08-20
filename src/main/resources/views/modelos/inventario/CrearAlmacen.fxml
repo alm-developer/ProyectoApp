@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane stylesheets="@../../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane stylesheets="@../../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.CrearModelos.Inventario.CrearAlmacenController">
    <padding>
       <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
    </padding>
@@ -18,14 +18,14 @@
             <Label alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="590.0" styleClass="label-titulo" text="CREACION ALMACEN" />
             <HBox prefHeight="30.0" prefWidth="590.0" spacing="4.0" style="-fx-padding: 4 4 4 4;">
                <children>
-                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="IdAlmacen:" />
-                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="Aqui ira el id del almacen" />
+                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="Usuario Activo:" />
+                  <Label fx:id="idMostrarUsuario" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="Aqui ira el id del almacen" />
                </children>
             </HBox>
             <VBox prefHeight="54.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
                <children>
                   <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="NOMBRE:" />
-                  <TextField styleClass="text-entradas" />
+                  <TextField fx:id="idEntradaNombre" styleClass="text-entradas" />
                </children>
             </VBox>
             <VBox prefHeight="54.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
@@ -35,15 +35,16 @@
                         <Insets />
                      </opaqueInsets>
                   </Label>
-                  <TextField style="-fx-padding: 3 3 3 3;" styleClass="text-entradas" />
+                  <TextField fx:id="idEntradaTitular" styleClass="text-entradas" />
                   <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="590.0" spacing="4.0">
                      <children>
-                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="cancelar" textAlignment="CENTER" />
-                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="aceptar" textAlignment="CENTER" />
+                        <Button fx:id="idBtnConfirmar" alignment="CENTER" mnemonicParsing="false" onAction="#CrearAlmacen" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="aceptar" textAlignment="CENTER" />
+                        <Button fx:id="idBtnCancelar" alignment="CENTER" mnemonicParsing="false" onAction="#cancelarCreacion" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="cancelar" textAlignment="CENTER" />
                      </children>
                   </HBox>
                </children>
             </VBox>
+            <Label fx:id="idTextoErrores" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="586.0" styleClass="label-input" text="Aqui ira el id del almacen" />
          </children>
       </VBox>
    </center>

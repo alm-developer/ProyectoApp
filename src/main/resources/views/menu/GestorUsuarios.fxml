@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Gestion.GestionUsuariosController">
+    <center>
+        <HBox>
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="264.0" spacing="12.0" style="-fx-padding: 15;" styleClass="ParteDerechaGestores" stylesheets="@../../estilos/estilos.css" HBox.hgrow="ALWAYS">
+                    <children>
+                        <ImageView fitHeight="161.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="label-titulo" stylesheets="@../../estilos/estilos.css" text="USUARIOS" textAlignment="CENTER" />
+                        <Button fx:id="idIrIniciarSesion" maxWidth="Infinity" onAction="#irInicioSesion" styleClass="button-inicio-registro" text="INICIAR SESION" />
+                        <Button fx:id="idIrRegitro" maxWidth="Infinity" onAction="#irRegistro" styleClass="button-inicio-registro" text="REGISTRARSE" />
+                        <Button fx:id="idEditarUsuario" alignment="CENTER" maxWidth="Infinity" onAction="#editarUsuario" styleClass="button-inicio-registro" text="EDITAR USUARIO" />
+                        <HBox alignment="CENTER">
+                            <children>
+                                <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="115.0" styleClass="label-input" stylesheets="@../../estilos/estilos.css" text="Usuario Activo: " textAlignment="CENTER" />
+                                <Label fx:id="idMostrarActivo" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="82.0" styleClass="label-input" stylesheets="@../../estilos/estilos.css" text="nombre" textAlignment="CENTER" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="600.0" prefWidth="919.0" spacing="4.0" style="-fx-padding: 10;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="649.0" spacing="2.0" style="-fx-padding: 3 3 3 3;" styleClass="Hbox-Filtros">
+                            <children>
+                                <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="538.0" promptText="ESCRIBE AQUI Y SELECCIONA PORQUE VALOR LO QUIERES FILTRAR" style="-fx-padding: 4 4 4 4;" />
+                                <ComboBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="350.0" promptText="FILTRAR POR" style="-fx-padding: 0 0 0 0;" styleClass="combo-box-crear">
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </ComboBox>
+                            </children>
+                        </HBox>
+                        <VBox prefHeight="565.0" prefWidth="649.0" VBox.vgrow="ALWAYS">
+                            <children>
+                                <TableView VBox.vgrow="ALWAYS">
+                                    <columns>
+                                        <TableColumn prefWidth="412.7999691963196" style="padding: 1 1 1 1;" text="nombre" />
+                                        <TableColumn prefWidth="237.5999755859375" text="Almacenes" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+
+</BorderPane>

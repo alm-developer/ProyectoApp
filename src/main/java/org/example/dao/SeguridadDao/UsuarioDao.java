@@ -4,10 +4,11 @@ import org.example.database.DatabaseConnection;
 import org.example.models.seguridad.Usuario;
 
 import javax.print.DocFlavor;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import javax.swing.plaf.TreeUI;
+import javax.xml.transform.Result;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UsuarioDao {
 
@@ -15,23 +16,37 @@ public class UsuarioDao {
 
         String sql = "INSERT INTO usuarios (nombre,contraseña) VALUES (?, ?)";
 
-        try (Connection con = DatabaseConnection.conectar(); PreparedStatement stmt = con.prepareStatement(sql);) {
+        //la condicion especial hace que se guarden los id que se han generado en una variable predefinida por el jdbc
+        try (Connection con = DatabaseConnection.conectar(); PreparedStatement pstmt = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);) {
 
-            stmt.setString(1, Usuario.getNombre());
-            stmt.setString(2, Usuario.getContraseña());
-            stmt.executeUpdate();
-            return true;
+            pstmt.setString(1, Usuario.getNombre());
+            pstmt.setString(2, Usuario.getContraseña());
+            int filasAfectadas = pstmt.executeUpdate();
+
+            //si las filas afectadas son mayores a cero
+            if (filasAfectadas > 0) {
+                // Pedimos las claves generadas
+                try (ResultSet generatedKeys = pstmt.getGeneratedKeys()) {
+                    //Se abre temporalmente donde se guarda todo y luego se lee el numero
+                    if (generatedKeys.next()) {
+                        int idGenerado = generatedKeys.getInt(1);
+                        Usuario.setIdUsuario(idGenerado); // ¡Guardamos el ID en el objeto!
+                    }
+                }
+                return true; // Ahora sí, devolvemos true al final
+            }
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
         }
+
+        return false;
     }
 
-    public static boolean comprobarInicioSesion(Usuario usuario){
+    public static boolean comprobarInicioSesion(Usuario usuario) {
 
         String sql = "SELECT nombre,contraseña FROM usuarios WHERE nombre = ? AND contraseña = ?";
 
-        try (Connection conn = DatabaseConnection.conectar(); PreparedStatement stmt = conn.prepareStatement(sql)){
+        try (Connection conn = DatabaseConnection.conectar(); PreparedStatement stmt = conn.prepareStatement(sql)) {
             // Simplemente le pasas los valores
             stmt.setString(1, usuario.getNombre());
             stmt.setString(2, usuario.getContraseña());
@@ -42,7 +57,7 @@ public class UsuarioDao {
                 return rs.next();
             }
         } catch (SQLException e) {
-        e.printStackTrace();
+            e.printStackTrace();
         }
 
         return false;
@@ -67,13 +82,12 @@ public class UsuarioDao {
         return false;
     }
 
-
-        public static boolean eliminarUsuario (Usuario usuarioObtenido) {
+    public static boolean eliminarUsuario(Usuario usuarioObtenido) {
 
         String sql = "DELETE FROM usuarios WHERE idUsuario = ?";
 
-        try (Connection con = DatabaseConnection.conectar();PreparedStatement stmt = con.prepareStatement(sql);
-        ){
+        try (Connection con = DatabaseConnection.conectar(); PreparedStatement stmt = con.prepareStatement(sql);
+        ) {
             //obtiene el id del usuario para poder eliminarlo de manera correcta
             stmt.setInt(1, usuarioObtenido.getIdUsuario());
 
@@ -84,15 +98,15 @@ public class UsuarioDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-            return false;
-        }
-
-        public static void editarUsuario (String nombre) {
-
-        }
+        return false;
+    }
 
 
+
+    public static void editarUsuario(String nombre) {
 
     }
+}
+
 
 
