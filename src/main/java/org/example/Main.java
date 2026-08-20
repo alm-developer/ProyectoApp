@@ -32,6 +32,20 @@ public class Main extends Application {
 
 
     }
+    public static void abrirVentana(String rutaFxml) throws IOException {
+        try {
+           //el loader debe de obener el fxml
+            // luego se debe crear la stage con este
+            //despues se debe definir la escena
+            // despues el titulo y ademas que no se pueda hacer mas grande la ventana y despues el show muestra
+        } catch (IOException e) {
+            System.err.println("Error al cambiar a la pantalla: " + rutaFxml);
+            e.printStackTrace();
+        }
+
+    }
+
+
     public static void cambiarPantalla(String rutaFxml) throws IOException {
         try {
             //obtiene la escena entonces la ruta ya estaria guardada en root.
