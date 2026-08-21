@@ -18,17 +18,39 @@
     -fx-text-fill:  -mi-dorado;
 
 }
+.label-MostrarId{
+    -fx-text-fill:  -mi-dorado;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
 
+
+
+}
 .TextFieldEntrada1{
-    -fx-opacity: 0.5;
+    -fx-opacity: 0.8;
     -fx-background-color: grey;
-    -fx-font-family: monospace;
+    -fx-font-family: "Corbel Light";
+    -fx-text-fill: -mi-dorado;
+    -fx-font-weight: bold;
+
 }
 
 .ButtonConfirmar1{
     -fx-background-color: #D4AF37;
     -fx-text-fill:Black;
     -fx-font-weight: bold;
+}
+
+
+.ButtonConfirmar2{
+    -fx-background-color: #242222;
+    -fx-text-fill:-mi-dorado;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5 5 5 5;
+    -fx-border-color: -mi-dorado;
+    -fx-opacity: 0.8;
+
+
 }
 
 .Hypervinculos1{
@@ -39,7 +61,8 @@
     -fx-text-fill: -mi-dorado;
     -fx-font-family: "Roboto Thin";
 }
-
-
+.tool-bar-1{
+    -fx-background-color: Transparent;
+}
 
 

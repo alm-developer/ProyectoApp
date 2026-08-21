@@ -3,49 +3,87 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane stylesheets="@../../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.CrearModelos.Inventario.CrearAlmacenController">
-   <padding>
-      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
-   </padding>
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="889.0" prefWidth="1219.0" styleClass="VBOX-GradienteDerecho" stylesheets="@../../../estilos/estilosprueba.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Menu.AlmacenController">
    <center>
-      <VBox alignment="TOP_CENTER" styleClass="Hbox" stylesheets="@../../../estilos/estilos.css" BorderPane.alignment="CENTER">
+      <HBox>
          <children>
-            <Label alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="590.0" styleClass="label-titulo" text="CREACION ALMACEN" />
-            <HBox prefHeight="30.0" prefWidth="590.0" spacing="4.0" style="-fx-padding: 4 4 4 4;">
+            <VBox alignment="TOP_CENTER" prefHeight="1086.0" prefWidth="300.0" spacing="12.0" style="-fx-padding: 15;" styleClass="ParteDerechaGestores" stylesheets="@../../estilos/estilos.css" HBox.hgrow="NEVER">
                <children>
-                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="Usuario Activo:" />
-                  <Label fx:id="idMostrarUsuario" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="183.0" styleClass="label-input" text="Aqui ira el id del almacen" />
-               </children>
-            </HBox>
-            <VBox prefHeight="54.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
-               <children>
-                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="NOMBRE:" />
-                  <TextField fx:id="idEntradaNombre" styleClass="text-entradas" />
-               </children>
-            </VBox>
-            <VBox prefHeight="54.0" prefWidth="590.0" spacing="5.0" style="-fx-padding: 4 4 4 4;">
-               <children>
-                  <Label alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="588.0" styleClass="label-input" text="TITULAR:">
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                  </Label>
-                  <TextField fx:id="idEntradaTitular" styleClass="text-entradas" />
-                  <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="590.0" spacing="4.0">
+                  <ImageView fitHeight="135.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/logo.png" />
+                     </image></ImageView>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="label-Titulos-1" stylesheets="@../../estilos/estilos.css" text="ALMACENES" textAlignment="CENTER" />
+                  <Button fx:id="btnVentas" maxWidth="Infinity" styleClass="ButtonConfirmar2" text="CREAR" />
+                  <Button fx:id="btnInventario1" maxWidth="Infinity" styleClass="ButtonConfirmar2" text="ELIMINAR" />
+                  <Button fx:id="btnInventario" alignment="CENTER" maxWidth="Infinity" styleClass="ButtonConfirmar2" text="EDITAR" />
+                  <Button fx:id="btnInventario2" alignment="CENTER" maxWidth="Infinity" styleClass="ButtonConfirmar2" text="SELECCIONAR" />
+                  <Button fx:id="btnInventario21" alignment="CENTER" maxWidth="Infinity" styleClass="ButtonConfirmar2" text="CAMBIAR CUENTA" />
+                  <HBox alignment="CENTER" styleClass="label-MostrarId">
                      <children>
-                        <Button fx:id="idBtnConfirmar" alignment="CENTER" mnemonicParsing="false" onAction="#CrearAlmacen" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="aceptar" textAlignment="CENTER" />
-                        <Button fx:id="idBtnCancelar" alignment="CENTER" mnemonicParsing="false" onAction="#cancelarCreacion" prefHeight="26.0" prefWidth="91.0" styleClass="button-inicio-registro" text="cancelar" textAlignment="CENTER" />
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="label-MostrarId" stylesheets="@../../estilos/estilos.css" text="Usuario seleccionado: " textAlignment="CENTER" />
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="82.0" styleClass="label-MostrarId" stylesheets="@../../estilos/estilos.css" text="nombre" textAlignment="CENTER" />
                      </children>
                   </HBox>
+                  <TitledPane animated="false" expanded="false" text="FILTROS">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="268.0">
+                           <children>
+                              <VBox layoutX="6.0" layoutY="8.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" spacing="4.0">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" prefHeight="15.0" prefWidth="79.0" styleClass="Label-Pedir1" stylesheets="@../../../estilos/estilosprueba.css" text="Nombre" textAlignment="CENTER" />
+                                          <TextField prefHeight="26.0" prefWidth="184.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="4.0">
+                                       <children>
+                                          <Label maxWidth="1.7976931348623157E308" prefHeight="15.0" prefWidth="79.0" styleClass="Label-Pedir1" stylesheets="@../../../estilos/estilosprueba.css" text="Titular:" textAlignment="CENTER" />
+                                          <TextField prefHeight="26.0" prefWidth="184.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" spacing="4.0" />
+                                    <HBox alignment="CENTER_LEFT" spacing="4.0" />
+                                    <HBox alignment="CENTER_LEFT" spacing="4.0" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="4.0" right="4.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
                </children>
             </VBox>
-            <Label fx:id="idTextoErrores" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="586.0" styleClass="label-input" text="Aqui ira el id del almacen" />
+            <VBox prefHeight="600.0" prefWidth="919.0" spacing="4.0" style="-fx-padding: 10;" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="565.0" prefWidth="649.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <TableView VBox.vgrow="ALWAYS">
+                           <columns>
+                              <TableColumn prefWidth="125.59997975826263" style="padding: 1 1 1 1;" text="Nombre Almacen" />
+                              <TableColumn prefWidth="522.4000137329101" text="Titular" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
          </children>
-      </VBox>
+      </HBox>
    </center>
+
 </BorderPane>
