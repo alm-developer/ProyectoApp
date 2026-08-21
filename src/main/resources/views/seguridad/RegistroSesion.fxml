@@ -5,76 +5,89 @@
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane styleClass="root" stylesheets="@../../estilos/estilos.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Seguridad.RegistroSesionController">
+<BorderPane styleClass="VBOX-GradienteDerecho" stylesheets="@../../estilos/estilosprueba.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controllers.Seguridad.RegistroSesionController">
     <center>
         <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
             <children>
-                <VBox alignment="CENTER" prefHeight="450.0" prefWidth="430.0" HBox.hgrow="ALWAYS">
+                <VBox alignment="CENTER" prefHeight="450.0" prefWidth="470.0" styleClass="Hbox" stylesheets="@../../estilos/estilosprueba.css" HBox.hgrow="ALWAYS">
                     <children>
-                        <ImageView fitHeight="168.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label styleClass="label-titulo" text="NOMBRE DE LA APP" />
+                        <ImageView fitHeight="411.0" fitWidth="341.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/A__3_-removebg-preview.png" />
+                     </image></ImageView>
                     </children>
                 </VBox>
-                <VBox alignment="CENTER" spacing="5.0" styleClass="Hbox" HBox.hgrow="ALWAYS">
-                    <children>
-                        <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="320.0" styleClass="label-titulo" stylesheets="@../../estilos/estilos.css" text="REGISTRO" textAlignment="CENTER">
-                            <VBox.margin>
-                                <Insets />
-                            </VBox.margin>
+            <BorderPane HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <center>
+                      <VBox alignment="CENTER" spacing="5.0" styleClass="Hbox">
+                          <children>
+                              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="320.0" styleClass="label-Titulos-1" stylesheets="@../../estilos/estilosprueba.css" text="REGISTRO" textAlignment="CENTER">
+                                  <VBox.margin>
+                                      <Insets />
+                                  </VBox.margin>
+                              </Label>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="215.0" styleClass="Label-Pedir1" text="Usuario">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <TextField fx:id="idEntradaUsuario" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" styleClass="TextFieldEntrada1" stylesheets="@../../estilos/estilosprueba.css">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </padding>
+                              </TextField>
+                              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="215.0" styleClass="Label-Pedir1" text="Contraseña">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                              <TextField fx:id="idEntradaContraseña" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" styleClass="TextFieldEntrada1">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </padding>
+                              </TextField>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="215.0" styleClass="Label-Pedir1" text="Repetir contraseña">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
                         </Label>
-                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="215.0" styleClass="label-input" text="Usuario">
-                            <padding>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                            </padding>
-                        </Label>
-                        <TextField fx:id="idEntradaUsuario" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" styleClass="text-entradas-crear">
-                            <padding>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                            </padding>
+                        <TextField fx:id="idEntradaContraseñaRepetir" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" styleClass="TextFieldEntrada1">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
                         </TextField>
-                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="215.0" styleClass="label-input" text="Contraseña">
-                            <padding>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                            </padding>
-                        </Label>
-                        <TextField fx:id="idEntradaContraseña" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" styleClass="text-entradas-crear">
-                            <padding>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                            </padding>
-                        </TextField>
-                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="215.0" styleClass="label-input" text="Repetir contraseña">
+                              <Button fx:id="idBotonConfirmar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#RegistrarUsuario" prefHeight="31.0" prefWidth="341.0" styleClass="ButtonConfirmar1" text="confirmar" />
+                        <HBox prefHeight="16.0" prefWidth="342.0">
+                           <children>
+                              <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                              <Hyperlink fx:id="idIrInicioSesion" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onAction="#irInicioSesion" prefHeight="24.0" prefWidth="155.0" styleClass="Hypervinculos1" text="¿Ya tienes cuenta?" textAlignment="RIGHT" />
+                           </children>
+                        </HBox>
+                              <Label fx:id="idTextoErrores" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="334.0" styleClass="TextoErrores1" text="Salida Errores">
+                                  <padding>
+                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                  </padding>
+                              </Label>
+                          </children>
                      <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        <Insets left="30.0" right="30.0" />
                      </padding>
-                  </Label>
-                  <TextField fx:id="idEntradaContraseñaRepetir" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="279.0" styleClass="text-entradas-crear">
-                     <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </padding>
-                  </TextField>
-                        <Button fx:id="idBotonConfirmar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#RegistrarUsuario" prefHeight="31.0" prefWidth="341.0" styleClass="button-inicio-registro" text="confirmar" />
-                  <HBox prefHeight="16.0" prefWidth="342.0">
-                     <children>
-                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-                        <Hyperlink fx:id="idIrInicioSesion" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onAction="#irInicioSesion" prefHeight="24.0" prefWidth="155.0" text="¿Ya tienes cuenta?" textAlignment="RIGHT" />
-                     </children>
-                  </HBox>
-                        <Label fx:id="idTextoErrores" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="334.0" styleClass="label-errores">
-                            <padding>
-                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                            </padding>
-                        </Label>
-                    </children>
-                    <HBox.margin>
-                        <Insets />
-                    </HBox.margin>
-                </VBox>
+                     <opaqueInsets>
+                        <Insets left="30.0" right="30.0" />
+                     </opaqueInsets>
+                      </VBox>
+               </center>
+            </BorderPane>
             </children>
         </HBox>
     </center>
