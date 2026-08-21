@@ -1,0 +1,46 @@
+
+.root {
+    -mi-dorado:#FFD700;
+}
+.VBOX-GradienteDerecho{
+    -fx-background-color: linear-gradient(to right, #000000 10%, #2a220d 100%);
+}
+.label-Titulos-1{
+    -fx-text-fill: -mi-dorado;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+.Hbox-GradienteTotal{
+    -fx-background-color: linear-gradient(to right, #000000 40%, #D4AF37 70%);
+}
+.Label-Pedir1{
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill:  -mi-dorado;
+
+}
+
+.TextFieldEntrada1{
+    -fx-opacity: 0.5;
+    -fx-background-color: grey;
+    -fx-font-family: monospace;
+}
+
+.ButtonConfirmar1{
+    -fx-background-color: #D4AF37;
+    -fx-text-fill:Black;
+    -fx-font-weight: bold;
+}
+
+.Hypervinculos1{
+    -fx-text-fill: -mi-dorado;
+}
+
+.TextoErrores1{
+    -fx-text-fill: -mi-dorado;
+    -fx-font-family: "Roboto Thin";
+}.ImagenLogo{
+
+ }
+
+
+

@@ -33,7 +33,7 @@ public class UsuarioDao {
                         Usuario.setIdUsuario(idGenerado); // ¡Guardamos el ID en el objeto!
                     }
                 }
-                return true; // Ahora sí, devolvemos true al final
+                return true;
             }
         } catch (SQLException e) {
             e.printStackTrace();
