@@ -20,7 +20,7 @@
                     <children>
                         <ImageView fitHeight="411.0" fitWidth="341.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/A__3_-removebg-preview.png" />
+                        <Image url="@../../images/logo.png" />
                      </image></ImageView>
                     </children>
                 </VBox>
