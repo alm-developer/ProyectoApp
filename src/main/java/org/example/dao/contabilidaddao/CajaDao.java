@@ -1,4 +1,4 @@
-package org.example.dao.ContabilidadDao;
+package org.example.dao.contabilidaddao;
 
 public class CajaDao {
 }

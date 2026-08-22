@@ -1,4 +1,4 @@
-package org.example.controllers.CrearModelos.Inventario;
+package org.example.controllers.crearmodelos.inventario;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

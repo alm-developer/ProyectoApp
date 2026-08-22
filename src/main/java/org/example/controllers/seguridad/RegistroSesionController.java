@@ -1,4 +1,4 @@
-package org.example.controllers.Seguridad;
+package org.example.controllers.seguridad;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,7 +11,6 @@ import org.example.dao.SeguridadDao.UsuarioDao;
 import org.example.models.seguridad.Usuario;
 import org.example.service.validacion.ServiceUsuario;
 
-import java.awt.*;
 import java.io.IOException;
 
 public class RegistroSesionController {
@@ -65,11 +64,7 @@ public class RegistroSesionController {
 
 
     public void irInicioSesion(ActionEvent actionEvent) {
-        try {
-            Main.cambiarPantalla("/views/seguridad/InicioSesion.fxml");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
     }
 }
 

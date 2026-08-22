@@ -1,4 +1,4 @@
-package org.example.controllers.CrearModelos.Participantes;
+package org.example.controllers.crearmodelos.participantes;
 
 public class CrearPersonasController {
 }

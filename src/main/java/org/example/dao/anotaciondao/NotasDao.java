@@ -1,4 +1,4 @@
-package org.example.dao.AnotacionDao;
+package org.example.dao.anotaciondao;
 
 public class NotasDao {
 }

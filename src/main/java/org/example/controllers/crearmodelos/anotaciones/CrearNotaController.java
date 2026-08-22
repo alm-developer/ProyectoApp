@@ -1,4 +1,4 @@
-package org.example.controllers.CrearModelos.Anotaciones;
+package org.example.controllers.crearmodelos.anotaciones;
 
 public class CrearNotaController {
 }

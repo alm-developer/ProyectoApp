@@ -1,4 +1,4 @@
-package org.example.dao.ComercioDao;
+package org.example.dao.comerciodao;
 
 public class CompraDao {
 }

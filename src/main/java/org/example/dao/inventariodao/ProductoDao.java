@@ -1,4 +1,4 @@
-package org.example.dao.InventarioDao;
+package org.example.dao.inventariodao;
 
 public class ProductoDao {
 }

@@ -1,4 +1,4 @@
-package org.example.service.ServiceSeguridad;
+package org.example.service.serviceseguridad;
 
 import org.example.models.seguridad.Usuario;
 

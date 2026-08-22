@@ -1,4 +1,4 @@
-package org.example.dao.ParticipantesDao;
+package org.example.dao.participantesdao;
 
 public class PersonasDao{
 

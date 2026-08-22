@@ -1,4 +1,4 @@
-package org.example.controllers.CrearModelos.Inventario;
+package org.example.controllers.crearmodelos.inventario;
 
 public class CrearProductoController {
 }
