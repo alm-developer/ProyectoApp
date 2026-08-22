@@ -82,8 +82,7 @@
                   </VBox>
                </children>
             </VBox>
-         </children>
-      </HBox>
+         </children>     </HBox>
    </center>
 
 </BorderPane>
