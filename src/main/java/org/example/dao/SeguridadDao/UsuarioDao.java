@@ -32,6 +32,8 @@ public class UsuarioDao {
                         int idGenerado = generatedKeys.getInt(1);
                         Usuario.setIdUsuario(idGenerado); // ¡Guardamos el ID en el objeto!
                     }
+                }catch (SQLException e){
+                    e.printStackTrace();
                 }
                 return true;
             }

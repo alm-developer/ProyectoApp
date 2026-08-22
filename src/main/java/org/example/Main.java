@@ -22,7 +22,7 @@ public class Main extends Application {
         //Por eso todo lo modificado va para la stage, porque basicamente es la pantalla
             stagePrincipal = primaryStage;
             DatabaseConnection.inicializarDatabase();
-            Parent root = FXMLLoader.load(getClass().getResource("/views/seguridad/RegistroSesion.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/views/seguridad/InicioSesion.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setTitle("Registro Usuario");
             primaryStage.setScene(scene);
@@ -42,7 +42,7 @@ public class Main extends Application {
             ventana.setResizable(false);
             ventana.show();
             // luego se debe crear la stage con este
-            //despues se debe definir la escena
+            // despues se debe definir la escena
             // despues el titulo y ademas que no se pueda hacer mas grande la ventana y despues el show muestra
         } catch (IOException e) {
             System.err.println("Error al cambiar a la pantalla: " + rutaFxml);

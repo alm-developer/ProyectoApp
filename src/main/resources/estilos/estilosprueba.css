@@ -28,7 +28,9 @@
 }
 .TextFieldEntrada1{
     -fx-opacity: 0.8;
+    -fx-border-radius: 5 5 5 5;
     -fx-background-color: grey;
+    -fx-background-radius: 5 5 5 5;
     -fx-font-family: "Corbel Light";
     -fx-text-fill: -mi-dorado;
     -fx-font-weight: bold;
@@ -44,6 +46,7 @@
 
 .ButtonConfirmar2{
     -fx-background-color: #242222;
+    -fx-background-radius: 5 5 5 5;
     -fx-text-fill:-mi-dorado;
     -fx-font-weight: bold;
     -fx-border-radius: 5 5 5 5;
@@ -51,6 +54,10 @@
     -fx-opacity: 0.8;
 
 
+}
+.ButtonConfirmar2:hover{
+    -fx-background-color: #1a1a1a;
+    -fx-opacity: 0.6;
 }
 
 .Hypervinculos1{
@@ -61,8 +68,41 @@
     -fx-text-fill: -mi-dorado;
     -fx-font-family: "Roboto Thin";
 }
-.tool-bar-1{
-    -fx-background-color: Transparent;
+.titlePanel > .title {
+    -fx-background-color: #242222;
+    -fx-background-insets: 0;
+
+}
+.titlePanel {
+    -fx-background-insets: 0;
+    -fx-text-fill: -mi-dorado;
+    -fx-border-radius: 5 5 5 5;
+    -fx-border-color:  -mi-dorado;;
+}
+.AnchorPanel-Titled{
+    -fx-background-color: #242222;
+    -fx-background-insets: 0;
+    -fx-border-color: Transparent;
+    -fx-background-radius: -mi-dorado;
 }
 
+
+.titled-pane > .content {
+    -fx-background-color: #1a1a1a;
+    -fx-background-insets: 0;
+    -fx-border-color: #FFD700;
+    -fx-border-width: 0;
+}
+
+.TableView-Listas{
+    -fx-background-color:  Transparent ;
+}
+
+.TableView-Listas .table-cell {
+    -fx-text-fill:  #1a1a1a; /* Hace que el texto de las celdas use tu dorado */
+}
+
+.TableView-Listas .column-header {
+    -fx-background-color: -mi-dorado; /* Mantén el fondo oscuro de tu app */
+}
 
