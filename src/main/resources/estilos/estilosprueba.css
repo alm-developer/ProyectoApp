@@ -99,10 +99,15 @@
 }
 
 .TableView-Listas .table-cell {
-    -fx-text-fill:  #1a1a1a; /* Hace que el texto de las celdas use tu dorado */
+    -fx-text-fill:  #1a1a1a;
 }
 
 .TableView-Listas .column-header {
-    -fx-background-color: -mi-dorado; /* Mantén el fondo oscuro de tu app */
+    -fx-background-color: -mi-dorado;
+}
+
+.TableView-Listas .row-selection {
+    -fx-background-color: -mi-dorado;
+
 }
 

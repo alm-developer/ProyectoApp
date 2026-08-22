@@ -81,7 +81,7 @@
                                 <TableView focusTraversable="false" styleClass="TableView-Listas" stylesheets="@../../estilos/estilosprueba.css" VBox.vgrow="ALWAYS">
                                     <columns>
                                         <TableColumn prefWidth="125.59997975826263" style="padding: 1 1 1 1;" text="Nombre" />
-                                        <TableColumn prefWidth="771.1999893188477" text="Titular" />
+                                        <TableColumn maxWidth="772.0000137329101" minWidth="-1.0" prefWidth="772.0000137329101" text="Titular" />
                                     </columns>
                                 </TableView>
                             </children>
